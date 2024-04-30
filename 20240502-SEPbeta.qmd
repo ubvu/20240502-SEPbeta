@@ -1,0 +1,162 @@
+---
+title: "Research evaluations following the Strategy Evaluation Protocol"
+subtitle: ""
+author: "[researchintelligence.ub@vu.nl](mailto:researchintelligence.ub@vu.nl)"
+lang: en
+date: "04/17/2024"
+date-format: "D MMMM YYYY"
+format: 
+  revealjs:
+    slide-number: false
+    theme: [simple, "stylefiles/VU-revealjs.scss"]
+    template-partials:
+      - "stylefiles/title-slide.html"
+    preview-links: auto
+    callout-icon: false
+    center: false
+---
+
+## Research Impact:<br>The role of the library
+
+::: {.callout-note}
+## Provide information
+Pure for registration<br>
+Access to databases<br>
+Responsible use of metrics
+:::
+
+:::: { .fragment fragment-index=4 .fade-out }
+
+::: { .fragment fragment-index=2 .absolute top="90%" left="5%" }
+Research Portal: <https://research.vu.nl/>
+:::
+
+![](img/rp-sdg.png){.fragment .shadow fragment-index=2 .absolute top="5%" left="10%" width="50%" height="auto"}
+![](img/rp-altmetric.png){.fragment fragment-index=3 .shadow .absolute top="20%" left="30%" width="75%" height="auto"}
+::::
+
+:::: {.fragment fragment-index=4}
+::: {.callout-note}
+## More active support
+Analysis and interpretation</br>
+Strategic decision-making</br>
+🎉 Team Research Intelligence 🎉
+:::
+::::
+
+## What does Team RI do?
+
+::: {.callout-note}
+## We demonstrate research impact by &#8230;
+- Collecting data on research<br>&emsp;&emsp;*for group, department, faculty*
+- linking those data to indicators<br>&emsp;&emsp;*citations, media attention, impact on policy, SDGs*
+- giving insight into impact to improve decision making.<br>&emsp;&emsp;*visualisations, interactive dashboards*
+:::
+
+::::: {.callout-note icon=false}
+## How is this used?
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+- Support for self-evaluation
+- Support for SEP
+:::
+
+::: {.column width="50%"}
+
+- Possibilities for cooperation
+- Explore possibilities for appointments
+:::
+
+::: {.column width="10%"}
+
+- &#8230;
+:::
+::::
+:::::
+
+## Strategy Evaluation Protocol 2021-'27
+::: { layout-ncol=2 }
+
+::: {}
+![](img/sep.png){ height=625 }
+:::
+
+::: {.callout}
+> &#8230;evaluate a research unit in light of its own aims and strategy&#8230;
+
+> &#8230;coherent narrative argument supported by factual evidence&#8230;
+
+> &#8230;leaves room for plurality with respect to the application and interpretation&#8230;
+:::
+
+:::
+
+## Strategy Evaluation Protocol 2021-'27
+::: {layout-ncol=2}
+
+:::: {}
+![](img/sep.png){ height=625 }
+::::
+
+:::: {}
+::: {.callout-note}
+## Main assessment criteria
+Research Quality<br/>
+Societal relevance<br/>
+Viability
+:::
+
+::: {.callout-note}
+## The unit addresses at least&#8230;
+Open Science<br/>
+PhD policy and training<br/>
+Academic culture<br/>
+Human resources policy
+
+*&#8230;integral aspects of each of the main assessment criteria&#8230;*
+:::
+::::
+
+:::
+
+## Indicators: General remarks
+
+::: {.callout-note}
+## [*DORA*](https://sfdora.org/read/)-compliant
+No journal-based measures<br/>
+Consider all research outputs<br/>
+Be open and transparent
+::: 
+
+::: {.callout-note}
+## [Barcelona declaration](https://vu.nl/en/news/2024/barcelona-declaration-important-step-for-vu-towards-open-research-information)
+Open research information becomes the norm<br/>
+Collaborate on the transition from closed to open research information
+::: 
+
+## Indicators: Research quality
+::::: {layout-ncol="2"}
+:::: {}
+::: {.callout-note}
+## Basics
+Publication counts<br/>
+Citation counts
+:::
+
+::: {.callout-note}
+## Enriched
+Research Profile<br/>
+Pubs in top citation %<br/>
+Collaborations<br/>
+Open Access & FAIR<br/>
+Field-weighted citations
+:::
+::::
+
+:::: {}
+::::
+
+:::::
