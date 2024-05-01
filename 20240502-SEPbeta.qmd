@@ -3,7 +3,7 @@ title: "Research evaluations following the Strategy Evaluation Protocol"
 subtitle: ""
 author: "[researchintelligence.ub@vu.nl](mailto:researchintelligence.ub@vu.nl)"
 lang: en
-date: "04/17/2024"
+date: "05/02/2024"
 date-format: "D MMMM YYYY"
 format: 
   revealjs:
@@ -95,7 +95,7 @@ Strategic decision-making</br>
 :::
 
 ## Strategy Evaluation Protocol 2021-'27
-::: {layout-ncol=2}
+::::: {layout-ncol=2}
 
 :::: {}
 ![](img/sep.png){ height=625 }
@@ -120,7 +120,7 @@ Human resources policy
 :::
 ::::
 
-:::
+:::::
 
 ## Indicators: General remarks
 
@@ -137,26 +137,69 @@ Open research information becomes the norm<br/>
 Collaborate on the transition from closed to open research information
 ::: 
 
-## Indicators: Research quality
-::::: {layout-ncol="2"}
-:::: {}
-::: {.callout-note}
-## Basics
-Publication counts<br/>
-Citation counts
+## Indicators
+
+:::: { layout="[[50,50],[-10,80,-10]]"}
+
+::: {}
+```{python}
+from great_tables import GT, md
+import polars as pl
+
+df=pl.DataFrame({
+  'x0': ['Products','Use','Recognition'],
+  'x1': ['Products for peers', 'Use by peers', 'Recognition by peers'], 
+  'x2': ['Products for society', 'Use by society', 'Recognition from society']})
+
+(
+    GT(df, rowname_col='x0')
+    .cols_label(
+      x1=md("Research quality"),
+      x2=md("Relevance for society")
+    )
+    .cols_width(
+      cases={
+        "x1": "40%",
+        "x2": "40%"
+      }
+    )
+)
+```
+:::
+::: {}
+```{python}
+
+df=pl.DataFrame({
+  'x0': ['Products','Use','Recognition'],
+  'x1': ['Publications', 'Citations ', 'Top p% cited'], 
+  'x2': ['Relevance for theme (e.g. SDGs)', 'Mentions in media, policy, guidelines', '-']})
+
+(
+    GT(df, rowname_col='x0')
+    .cols_label(
+      x1=md("Research quality"),
+      x2=md("Relevance for society")
+    )
+    .cols_width(
+      cases={
+        "x1": "40%",
+        "x2": "40%"
+      }
+    )    
+)
+```
 :::
 
-::: {.callout-note}
-## Enriched
-Research Profile<br/>
-Pubs in top citation %<br/>
-Collaborations<br/>
-Open Access & FAIR<br/>
-Field-weighted citations
+::: { .callout-note }
+## Other things to consider
+Research profile<br/>
+Collaborations (globally or with specific regions) <br/>
+Benchmark (globally or to specific institutes) <br/>
+% open access
 :::
+
 ::::
 
-:::: {}
-::::
+## Psychology
 
-:::::
+<iframe title="2023_psychologie_dashboard" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=a7d3e194-083e-4ea0-8f3b-bf237d9cf9de&autoAuth=true&ctid=462a9c9c-2da6-4bfb-b318-0f83043fe49b" frameborder="0" allowFullScreen="true"></iframe>
