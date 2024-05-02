@@ -184,7 +184,7 @@ Authorship of policy
 ::: { .callout-note }
 ## Data sources
 Pure<br/>
-Openalex (*open source*)<br/>
+[Openalex](https://openalex.org/works?page=1&filter=authorships.institutions.lineage%3Ai865915315&sort=cited_by_percentile_year.min%3Adesc) (*open source*)<br/>
 Altmetric<br/>
 &#8230;
 :::
