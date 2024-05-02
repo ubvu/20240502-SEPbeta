@@ -16,34 +16,6 @@ format:
     center: false
 ---
 
-## Research Impact:<br>The role of the library
-
-::: {.callout-note}
-## Provide information
-Pure for registration<br>
-Access to databases<br>
-Responsible use of metrics
-:::
-
-:::: { .fragment fragment-index=4 .fade-out }
-
-::: { .fragment fragment-index=2 .absolute top="90%" left="5%" }
-Research Portal: <https://research.vu.nl/>
-:::
-
-![](img/rp-sdg.png){.fragment .shadow fragment-index=2 .absolute top="5%" left="10%" width="50%" height="auto"}
-![](img/rp-altmetric.png){.fragment fragment-index=3 .shadow .absolute top="20%" left="30%" width="75%" height="auto"}
-::::
-
-:::: {.fragment fragment-index=4}
-::: {.callout-note}
-## More active support
-Analysis and interpretation</br>
-Strategic decision-making</br>
-🎉 Team Research Intelligence 🎉
-:::
-::::
-
 ## What does Team RI do?
 
 ::: {.callout-note}
@@ -56,22 +28,19 @@ Strategic decision-making</br>
 ::::: {.callout-note icon=false}
 ## How is this used?
 
-:::: {.columns}
+:::: {layout="[35,50,15]"}
 
-::: {.column width="40%"}
-
+::: {}
 - Support for self-evaluation
 - Support for SEP
 :::
 
-::: {.column width="50%"}
-
+::: {}
 - Possibilities for cooperation
 - Explore possibilities for appointments
 :::
 
-::: {.column width="10%"}
-
+::: {}
 - &#8230;
 :::
 ::::
@@ -104,25 +73,29 @@ Strategic decision-making</br>
 :::: {}
 ::: {.callout-note}
 ## Main assessment criteria
+::: {.fragment fragment-index=1 .highlight-red style="margin-bottom: -15px; margin-top: -5px;"}
 Research Quality<br/>
-Societal relevance<br/>
+Societal relevance
+:::
 Viability
 :::
 
 ::: {.callout-note}
 ## The unit addresses at least&#8230;
+::: {.fragment fragment-index=1 .highlight-red style="margin-bottom: -15px; margin-top: -5px;"}
 Open Science<br/>
+:::
 PhD policy and training<br/>
 Academic culture<br/>
 Human resources policy
 
-*&#8230;integral aspects of each of the main assessment criteria&#8230;*
+&#8230;*integral aspects of each of the main assessment criteria*&#8230;
 :::
 ::::
 
 :::::
 
-## Indicators: General remarks
+## *Dora* and *Barcelona*
 
 ::: {.callout-note}
 ## [*DORA*](https://sfdora.org/read/)-compliant
@@ -139,7 +112,7 @@ Collaborate on the transition from closed to open research information
 
 ## Indicators
 
-:::: { layout="[[50,50],[-10,80,-10]]"}
+:::: { layout="[[1,1],[1,1,1]]"}
 
 ::: {}
 ```{python}
@@ -149,7 +122,8 @@ import polars as pl
 df=pl.DataFrame({
   'x0': ['Products','Use','Recognition'],
   'x1': ['Products for peers', 'Use by peers', 'Recognition by peers'], 
-  'x2': ['Products for society', 'Use by society', 'Recognition from society']})
+  'x2': ['Products for society', 'Use by society', 'Recognition from society'],
+  'hidden': ['Relevance for theme (e.g. SDGs)', 'Mentions in media, policy, guidelines', '-']})
 
 (
     GT(df, rowname_col='x0')
@@ -163,6 +137,7 @@ df=pl.DataFrame({
         "x2": "40%"
       }
     )
+    .cols_hide('hidden') # hack to increase row height but not working
 )
 ```
 :::
@@ -191,15 +166,30 @@ df=pl.DataFrame({
 :::
 
 ::: { .callout-note }
-## Other things to consider
+## Enrichment
 Research profile<br/>
-Collaborations (globally or with specific regions) <br/>
-Benchmark (globally or to specific institutes) <br/>
+Collaborations<br/>
+Benchmark<br/>
 % open access
 :::
 
+::: { .callout-warning }
+## Difficult
+Software, data, preprint<br/>
+Patents, startups<br/>
+Media appearance<br/>
+Authorship of policy
+:::
+
+::: { .callout-note }
+## Data sources
+Pure<br/>
+Openalex (*open source*)<br/>
+Altmetric<br/>
+&#8230;
+:::
 ::::
 
-## Psychology
+## SEP Psychology (2023)
 
 <iframe title="2023_psychologie_dashboard" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=a7d3e194-083e-4ea0-8f3b-bf237d9cf9de&autoAuth=true&ctid=462a9c9c-2da6-4bfb-b318-0f83043fe49b" frameborder="0" allowFullScreen="true"></iframe>
