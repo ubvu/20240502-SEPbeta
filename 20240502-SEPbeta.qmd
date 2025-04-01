@@ -20,9 +20,12 @@ format:
 
 ::: {.callout-note}
 ## We demonstrate research impact by &#8230;
-- Collecting data on research<br>&emsp;&emsp;*for group, department, faculty*
-- linking those data to indicators<br>&emsp;&emsp;*citations, media attention, impact on policy, SDGs*
-- giving insight into impact to improve decision making.<br>&emsp;&emsp;*visualisations, interactive dashboards*
+- Collecting data on research
+    - *for group, department, faculty*
+- linking those data to indicators
+    - *citations, media attention, impact on policy, SDGs*
+- giving insight into impact to improve decision making.
+    - *visualisations, interactive dashboards*
 :::
 
 ::::: {.callout-note icon=false}
@@ -74,20 +77,20 @@ format:
 ::: {.callout-note}
 ## Main assessment criteria
 ::: {.fragment fragment-index=1 .highlight-red style="margin-bottom: -15px; margin-top: -5px;"}
-Research Quality<br/>
-Societal relevance
+- Research Quality
+- Societal relevance
 :::
-Viability
+- Viability
 :::
 
 ::: {.callout-note}
 ## The unit addresses at least&#8230;
 ::: {.fragment fragment-index=1 .highlight-red style="margin-bottom: -15px; margin-top: -5px;"}
-Open Science<br/>
+- Open Science
 :::
-PhD policy and training<br/>
-Academic culture<br/>
-Human resources policy
+- PhD policy and training
+- Academic culture
+- Human resources policy
 
 &#8230;*integral aspects of each of the main assessment criteria*&#8230;
 :::
@@ -99,20 +102,20 @@ Human resources policy
 
 ::: {.callout-note}
 ## [*DORA*](https://sfdora.org/read/)-compliant
-No journal-based measures<br/>
-Consider all research outputs<br/>
-Be open and transparent
+- No journal-based measures
+- Consider all research outputs
+- Be open and transparent
 ::: 
 
 ::: {.callout-note}
 ## [Barcelona declaration](https://vu.nl/en/news/2024/barcelona-declaration-important-step-for-vu-towards-open-research-information)
-Open research information becomes the norm<br/>
-Collaborate on the transition from closed to open research information
+- Open research information becomes the norm
+- Collaborate on the transition from closed to open research information
 ::: 
 
 ## Indicators
 
-:::: { layout="[[1,1],[1,1,1]]"}
+:::: { layout="[[1,1],[1,1.1,1.1]]"}
 
 ::: {}
 ```{python}
@@ -123,7 +126,7 @@ df=pl.DataFrame({
   'x0': ['Products','Use','Recognition'],
   'x1': ['Products for peers', 'Use by peers', 'Recognition by peers'], 
   'x2': ['Products for society', 'Use by society', 'Recognition from society'],
-  'hidden': ['Relevance for theme (e.g. SDGs)', 'Mentions in media, policy, guidelines', '-']})
+  'hidden': ['Relevance for theme (e.g. SDGs)', 'Mentions in media, policy, clinical guidelines', '-']})
 
 (
     GT(df, rowname_col='x0')
@@ -148,7 +151,7 @@ df=pl.DataFrame({
 df=pl.DataFrame({
   'x0': ['Products','Use','Recognition'],
   'x1': ['Publications', 'Citations ', 'Top p% cited'], 
-  'x2': ['Relevance for theme (e.g. SDGs)', 'Mentions in media, policy, guidelines', '-']})
+  'x2': ['Relevance for theme (e.g. SDGs)', 'Mentions in media, policy, clinical guidelines', '-']})
 
 (
     GT(df, rowname_col='x0')
@@ -168,26 +171,26 @@ df=pl.DataFrame({
 
 ::: { .callout-note }
 ## Enrichment
-Research profile<br/>
-Collaborations<br/>
-Benchmark<br/>
-% open access
+- Research profile
+- Collaborations
+- Benchmark
+- % open access
 :::
 
 ::: { .callout-warning }
 ## Difficult
-Software, data, preprint<br/>
-Patents, startups<br/>
-Media appearance<br/>
-Authorship of policy
+- Software, data, preprint
+- Patents, startups
+- Media appearance
+- Authorship of policy
 :::
 
 ::: { .callout-note }
 ## Data sources
-Pure<br/>
-[Openalex](https://openalex.org/works?page=1&filter=authorships.institutions.lineage%3Ai865915315&sort=cited_by_percentile_year.min%3Adesc) (*open source*)<br/>
-Altmetric<br/>
-&#8230;
+- Pure
+- [Openalex](https://openalex.org/works?page=1&filter=authorships.institutions.lineage%3Ai865915315&sort=cited_by_percentile_year.min%3Adesc) (*open source*)<br/>
+- Altmetric
+- &#8230;
 :::
 ::::
 
