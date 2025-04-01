@@ -47,11 +47,11 @@ format:
 :::::
 
 ## Strategy Evaluation Protocol 2021-'27
-::: { layout-ncol=2 }
+:::: { layout-ncol=2 }
 
-::: {}
-![](img/sep.png){ height=625 }
-:::
+:::: {style="vertical-align: top;"}
+![](img/sep.png){ style="height: 600px ;margin-top: 0;" }
+::::
 
 ::: {.callout}
 > &#8230;evaluate a research unit in light of its own aims and strategy&#8230;
@@ -61,13 +61,13 @@ format:
 > &#8230;leaves room for plurality with respect to the application and interpretation&#8230;
 :::
 
-:::
+::::
 
 ## Strategy Evaluation Protocol 2021-'27
 ::::: {layout-ncol=2}
 
-:::: {}
-![](img/sep.png){ height=625 }
+:::: {style="vertical-align: top;"}
+![](img/sep.png){ style="height: 600px ;margin-top: 0;" }
 ::::
 
 :::: {}
@@ -138,6 +138,7 @@ df=pl.DataFrame({
       }
     )
     .cols_hide('hidden') # hack to increase row height but not working
+    # .tab_options(table_font_names="Source Sans Pro", table_font_size=".4em")
 )
 ```
 :::
